@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		<!-- meta character set -->
+		meta(charset="utf-8")
+		title wordbeater
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(rel="stylesheet" type="text/css" href="css/main.css")
+	body
+		div(class='container-fluid')
+			header
+				h1 wordBeater
+			main
+				section.time
+					P
+						| type the given word within 
+						span(id='seconds') 5 
+						| seconds
+				section.word
+					h2#word laughter
+					form
+						input(type='text', id='wordInput', value='', required)
+						label(for='wordInput') start typing...
+					div(class='message')
+				section.state
+					h3 timeLeft: 
+						span#timeLeft 0
+					h3 score: 
+						span#score 0
+					div.instructions
+						h4 instructions
+						p type each word in the given amount of seconds to score, to play again, just type the current word. your score will reset
+script(src='js/index.js')

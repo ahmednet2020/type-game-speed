@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+	border: none
+	outline: none
+html,
+body
+	font-family: sans-serif;
+	font-size: 16px
+header
+	display: flex
+	justify-content: center
+	padding: 1em 0
+	background-color: #00bcd4
+	color: #fff
+	text-transform: capitalize
+section
+	padding: 1em 0
+	display: flex
+	justify-content: center
+	align-items: center
+.time
+	P
+		text-transform: capitalize
+		font-size: 18px
+	#seconds
+		color: #E91E63
+		display: inline-block
+		padding: 0 0.5em
+		transform: scale(1)
+		transition: transform 0.2s ease-in-out;
+		will-change: transform;
+		&.big
+			transform: scale(2)
+.word
+	flex-direction: column
+	#word
+		font-size: 26px
+		line-height: 2
+	form
+		margin: 1em 0
+		padding: 0.5em
+		position: relative
+		width: 50%
+		border: 1px solid #ccc
+		border-radius: 5px
+	label
+		position: absolute
+		top: 0.5em
+		z-index: 9;
+		user-select: none
+		pointer-events: none
+		text-transform: capitalize
+	#wordInput
+		position: relative
+		width: 100%
+		display: inline-block
+		&:focus,
+		&:valid
+			& + label
+				display: none
+.state
+	flex-direction: column
+	h3
+		text-transform: capitalize
+		font-size: 18px
+		margin: 0.5em 0
+	.instructions
+		margin: 1em 0;
+		width: 50%
+		text-align: center
+		padding: 0.5em
+		background-color: #00bcd4
+		color: #fff
+		font-size: 16px
+		line-height: 1.5
+		h4
+			font-size: 18px
+			line-height: 2
+			text-transform: capitalize
+
+
+
