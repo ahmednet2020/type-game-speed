@@ -28,13 +28,7 @@ section
 		font-size: 18px
 	#seconds
 		color: #E91E63
-		display: inline-block
 		padding: 0 0.5em
-		transform: scale(1)
-		transition: transform 0.2s ease-in-out;
-		will-change: transform;
-		&.big
-			transform: scale(2)
 .word
 	flex-direction: column
 	#word
@@ -68,6 +62,14 @@ section
 		text-transform: capitalize
 		font-size: 18px
 		margin: 0.5em 0
+	#timeLeft
+		display: inline-block
+		color: #E91E63
+		transform: scale(1)
+		transition: transform 0.2s ease-in-out;
+		will-change: transform;
+		&.big
+			transform: scale(2)
 	.instructions
 		margin: 1em 0;
 		width: 50%
