@@ -9,7 +9,7 @@ const buffer = require('vinyl-buffer');
 
 gulp.task("ts", function () {
   return browserify({
-    entries: ['./src/ts/index.ts'],
+    entries: ['./src/ts/index.ts','./src/ts/app.ts'],
     debug: true
   }).plugin(tsify)
     .transform('babelify', {
